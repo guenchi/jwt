@@ -6,10 +6,25 @@ Json Web Token for Chez Scheme
 
 JSON: https://github.com/guenchi/json
 
-cBASE64: https://github.com/theschemer/cBASE64
+BASE64: https://github.com/theschemer/BASE64
 
-cSHA256: https://github.com/theschemer/cSHA256
+cHS256: https://github.com/theschemer/cHS256
 
 or just let Raven do all:
 
 `raven install jwt`
+
+
+use：
+
+`payload: Association list`
+
+`secret: string`
+
+```
+(sign payload secret)  => string
+
+(verif token secret)   
+                    ok => payload
+                    no => #f
+```
