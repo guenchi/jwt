@@ -46,10 +46,14 @@
     (define verif
         (lambda (token secret)
             (let ((payload (split token #\.)))
-                (if (equal? (caddr payload) (b64encode
-                                                (hs256 
-                                                    (string-append (car payload) "." (cadr payload))
-                                                 secret)))
+                (if (and
+                        (equal? (length payload) 3)
+                        (equal? 
+                            (caddr payload) 
+                            (b64encode
+                                (hs256 
+                                    (string-append (car payload) "." (cadr payload))
+                                    secret))))
                     (string->json (b64decode (cadr payload)))
                     #f))))
 
