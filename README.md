@@ -10,7 +10,7 @@ BASE64: https://github.com/theschemer/BASE64
 
 cHS256: https://github.com/theschemer/cHS256
 
-or just let Raven do all:
+or ***just let Raven do all:***
 
 `raven install jwt`
 
