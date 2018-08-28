@@ -17,11 +17,11 @@ or just let Raven do all:
 
 use：
 
-`payload: Association list`
-
-`secret: string`
 
 ```
+payload: Association list
+secret: string
+
 (sign payload secret)  => string
 
 (verif token secret)   
