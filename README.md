@@ -17,6 +17,7 @@ or ***just let Raven do all:***
 
 ***use：***
 
+only HS256 sign for now.
 
 ```
 payload: Association list
