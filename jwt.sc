@@ -1,8 +1,7 @@
 (library (jwt jwt)
     (export
         sign
-        verif
-    )
+        verif)
     (import
         (scheme)
         (chs256 chs256)
@@ -16,9 +15,7 @@
                 (encode-utf8-url b64encode)
                 (decode-utf8-url b64decode))
             b64encode
-            b64decode)
-        
-    )
+            b64decode))
 
     (define split
         (lambda (s c)
