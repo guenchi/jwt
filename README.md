@@ -20,7 +20,7 @@ or ***just let Raven do all:***
 only HS256 sign for now.
 
 ```
-payload: Association list
+payload: association-list
 secret: string
 
 (sign payload secret)  => string
