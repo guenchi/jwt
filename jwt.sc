@@ -46,7 +46,8 @@
     (define verif
         (lambda (token secret)
             (let ((payload (split token #\.)))
-                (if (and
+                (if 
+                    (and
                         (equal? (length payload) 3)
                         (equal? 
                             (caddr payload) 
