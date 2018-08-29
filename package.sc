@@ -8,7 +8,7 @@
     ("private" . #f)
     ("scripts")
     ("dependencies"
-        ("json" . "1.5.3")
+        ("json" . "1.5.5")
         ("base64" . "1.1.0")
         ("chs256" . "0.1.0"))
     ("devDependencies"))
