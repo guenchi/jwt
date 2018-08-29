@@ -33,7 +33,7 @@ secret: string
 exemple:
 
 ```
-(define payload '(("foo" . "bar")("baz" . "foo")))
+(define payload `(("foo" . "bar")("baz" . "foo")))
 (define secret "PrivateKey")
 
 (sign payload secret)
