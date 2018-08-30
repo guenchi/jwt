@@ -4,6 +4,8 @@ Json Web Token for Chez Scheme
 
 ***Dependent libraries:***
 
+core: https://github.com/guenchi/core
+
 JSON: https://github.com/guenchi/json
 
 BASE64: https://github.com/theschemer/BASE64
